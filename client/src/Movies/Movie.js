@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from "react-router-dom";
 
 const Movie = (props) => {
   const [movie, setMovie] = useState();
+
+  console.log(props)
  
   useEffect(() => {
     const id = 1;
